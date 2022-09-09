@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{enumitem}
+
+
+\newcommand{\increment}{\mathbin{++}}
+\begin{document}
+
+\title{\huge {A Reference for Myself in Analysis and Topology}}
+\author{\Large Devlin R. Corrigan}
+\maketitle
+
+\section{Mathematical Logic}
+
+\section{Set Theory}
+\subsection{Zermelo-Fraenkel-Choice Axioms}
+\begin{enumerate}[label=2.1.\arabic*]
+    \item (Sets  are objects). If $A$ is a set, then $A$ is also an object. In particular, given two sets $A$ and $B$, it is meaningful to ask whether $A$ is also an element of $B$.
+    \item (Equality of sets). Two sets $A$ and $B$ are equal, $A=B$ \textit{iff} every element of $A$ if an element of $B$ and vice versa. To put it another way, $A=B$ \textit{if and only if} every element $x$ of $A$ belongs also to $B$, and every element $y$ of $B$ belongs also to $A$.
+    \item (Empty set). There exists a set $\emptyset$, known as the empty set, which contains no elements, i.e., for every object $x$ we have $x \notin \emptyset$.
+    \item (Singleton sets and pair sets). If $a$ is an object, then there exists a set $\{a\}$ whose only element is $a$, i.e., for every object $y$, we have $y \in A$ \textit{if and only if} $y=a$; we refer to $\{a\}$ as the \textit{singleton set} whose element is $a$. Furthermore, if $a$ and $b$ are objects, then there exists a set $\{a,b\}$ whose only elements are $a$ and $b$; i.e., for every object $y$, we have $y\in\{a,b\}$ \textit{if and only if} $y=a$ or $y=b$; we refer to this set as the \textit{pair set} formed by a and b.
+    \item (Pairwise union). Given any two sets
+\end{enumerate}
+
+\section{The Natural Numbers}
+\subsection{Peano Axioms}
+\begin{enumerate}[label=3.1.\arabic*]
+    \item 0 is a natural number.
+    \item If $n$ is a natural number, then $n \increment$ is also a natural number.
+    \item 0 is not the successor of any natural number; i.e., we have $n \increment \neq 0$ for every natural number $n$.
+    \item Different natural numbers must have different successors; i.e., if $n,~m$ are natural numbers, and $n \neq m$, then $n\increment \neq m\increment$. Equivalently, if $n\increment = m\increment$, then we must have $n = m$.
+    \item (Principle of Mathematical Induction). Let $P(n)$ be any property pertaining to a natural number $n$. Suppose that $P(0)$ is true, and suppose that whenever $P(n)$ is true, $P(n\increment)$ is also true. Then $P(n)$ is true for every natural number $n$.
+\end{enumerate}
+
+\section{Formal Construction of $Z$, $Q$, $R$}
+
+
+
+
+
+
+\section{}
+
+\end{document}
